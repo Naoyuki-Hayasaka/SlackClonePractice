@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React test test test test
+          {[1, 2, 3, 4].map((e) => console.log(e)).map((e) => e + 4).filter((e) => e > 5)}
         </a>
       </header>
     </div>
