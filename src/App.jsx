@@ -15,7 +15,7 @@ function App() {
           target="_blank"
           rel="noopener noreferrer"
         >
-          {[1, 2, 3, 4].map((e) => console.log(e)).map((e) => e + 4).filter((e) => e > 5)}
+          {[1, 2, 3, 4].map((e) => console.log(e)).map((e) => e + 4).filter((e) => e > 5).map((e) => console.log(e + 4))}
         </a>
       </header>
     </div>
