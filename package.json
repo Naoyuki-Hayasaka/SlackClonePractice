@@ -16,7 +16,7 @@
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject",
-    "lint": "eslint --fix './src/**/*.{js, jsx}' && prettier --write './src/**/*.{js, jsx}'"
+    "lint": "eslint --fix './src/**/*.{js, jsx}'"
   },
   "eslintConfig": {
     "extends": [
@@ -44,18 +44,7 @@
     "eslint-plugin-jsx-a11y": "^6.5.1",
     "eslint-plugin-react": "^7.29.4",
     "eslint-plugin-react-hooks": "^4.4.0",
-    "husky": "^7.0.4",
     "lint-staged": "^12.3.7",
     "prettier": "^2.6.1"
-  },
-  "husky": {
-    "hooks": {
-      "pre-commit": "lint-staged"
-    }
-  },
-  "lint-staged": {
-    "src/**/*/{js. jsx}": [
-      "npm run lint"
-    ]
   }
 }
