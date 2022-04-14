@@ -4,13 +4,18 @@ import PropTypes from "prop-types";
 import { css } from "@emotion/react";
 
 export const Button = (props) => {
-  const { children, className } = props;
-  return <button css={csses[className]}>{children}</button>;
+  const { children, className, onClick } = props;
+  return (
+    <button css={csses[className]} onClick={onClick}>
+      {children}
+    </button>
+  );
 };
 
 Button.propTypes = {
   children: PropTypes.string,
-  className: PropTypes.string
+  className: PropTypes.string,
+  onClick: PropTypes.func
 };
 
 const csses = {
@@ -23,5 +28,9 @@ const csses = {
     border: none;
     font-size: 16px;
     line-height: 16px;
+    cursor: pointer;
+    &:hover {
+      opacity: 0.9;
+    }
   `
 };
