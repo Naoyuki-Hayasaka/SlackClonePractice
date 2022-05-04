@@ -10,7 +10,7 @@ export const Image = (props) => {
 };
 
 Image.propTypes = {
-  className: PropTypes.string
+  className: PropTypes.string,
 };
 
 const csses = {
@@ -30,5 +30,5 @@ const csses = {
     &:active {
       transform: translate(0, 0.5px);
     }
-  `
+  `,
 };

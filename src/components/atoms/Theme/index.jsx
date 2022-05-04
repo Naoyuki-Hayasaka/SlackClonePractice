@@ -4,5 +4,5 @@ export const Colors = {
   fontColor: "#333333",
   errorColor: "#bc2c1a",
   darkLineColor: "#cccccc",
-  lightLineColor: "#efefef"
+  lightLineColor: "#efefef",
 };

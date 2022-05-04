@@ -16,7 +16,7 @@ export const Button = (props) => {
 Button.propTypes = {
   children: PropTypes.string,
   className: PropTypes.string,
-  onClick: PropTypes.func
+  onClick: PropTypes.func,
 };
 
 const csses = {
@@ -36,5 +36,5 @@ const csses = {
     &:active {
       transform: translate(0, 0.5px);
     }
-  `
+  `,
 };
