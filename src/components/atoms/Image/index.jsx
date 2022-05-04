@@ -4,19 +4,13 @@ import PropTypes from "prop-types";
 import { css } from "@emotion/react";
 import { Colors } from "../Theme";
 
-export const Button = (props) => {
-  const { children, className, onClick } = props;
-  return (
-    <button css={csses[className]} onClick={onClick}>
-      {children}
-    </button>
-  );
+export const Image = (props) => {
+  const { className } = props;
+  return <div css={csses[className]} />;
 };
 
-Button.propTypes = {
-  children: PropTypes.string,
-  className: PropTypes.string,
-  onClick: PropTypes.func
+Image.propTypes = {
+  className: PropTypes.string
 };
 
 const csses = {
